@@ -1,6 +1,6 @@
 {
   "name": "adaptive-route-planning",
-  "namespace": "arp",
+  "namespace": "appkit",
   "APIMethod": "stub",
   "proxyURL": "arp.herokuapp.com",
   "version": "0.0.0",

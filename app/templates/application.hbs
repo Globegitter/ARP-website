@@ -11,18 +11,19 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li>{{#link-to 'component-test'}}Menu1{{/link-to}}</li>
-            <li>{{#link-to 'helper-test'}}Menu2{{/link-to}}</li>
-            <li>{{#link-to 'helper-test'}}Menu3{{/link-to}}</li>
-            <li>{{#link-to 'helper-test'}}Menu4{{/link-to}}</li>
-            <li>{{#link-to 'helper-test'}}Menu5{{/link-to}}</li>
+            <li>{{#link-to 'schedule'}}Schedule{{/link-to}}</li>
+            <li>{{#link-to 'roles'}}Team Roles{{/link-to}}</li>
+            <li>{{#link-to 'rules'}}Team Rules{{/link-to}}</li>
+            <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
           </ul>
         </div>
     </nav>
-    <div class="container" id="main">
+    {{outlet}}
+    <!--<div class="container" id="main">
+        
         <div class="row">
             <div>
-                <!--<div class="col-md-3">
+                <div class="col-md-3">
                     <div class="sidebar-nav">
                         <strong>Colors</strong>
                         <ul class="list-group">
@@ -31,11 +32,12 @@
                         {{!/each}}
                         </ul>
                     </div>
-                </div>-->
-                <div class="col-md-12">
-                    {{outlet}}
                 </div>
+                <div class="col-md-12">
+                    
+                </div>
+                
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
