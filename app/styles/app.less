@@ -1,0 +1,13 @@
+@import "../../vendor/bootstrap/less/bootstrap.less";
+//@import "variables-custom.less";
+//@import "theme-custom.less";
+
+/* Put your CSS here */
+html, body {
+  margin: 30px 0;
+  /*background-color: #f5f5f5;*/
+}
+
+@keyframes domChanged { from { background: yellow; } }
+@-webkit-keyframes domChanged { from { background: yellow; } }
+.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
