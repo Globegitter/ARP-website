@@ -5,6 +5,10 @@ Router.map(function() {
   this.route('roles');
   this.route('rules');
   this.route('contact');
+  //this.resource('index', {
+  //  path: '/',
+  //  queryParams: ['anchor']
+  //});
   // this.resource('posts', function() {
   //   this.route('new');
   // });

@@ -1,10 +1,26 @@
 <div class="jumbotron">
   <div class="container">
-  <h1>
+  <h1 title="Adaptive Route Planning" class="reflected">
     Adaptive Route Planning
   </h1>
-  <p>
-The UNC GAMMA Research	Group is developing an Android-based platform for adaptive vehicle route planning using real-time traffic information that will predict the future traffic for the vehicles entering the road network based on existing traffic condition and select the optimal routes for the drivers. The system also takes into account the effects of the vehicles that adopt the planned routes and consequently affecting the future traffic for the future adopters. This project is to develop an iPhone App to port this Android-based mobile system to iPhone (with iOS).
-  </p>
+  <h2>
+Self-aware vehicle route planning app that uses real-time traffic data and own routing history to determine optimal routes for users.
+  <!--
+  The UNC GAMMA Research	Group is developing an Android-based platform for adaptive vehicle route planning using real-time traffic information that will predict the future traffic for the vehicles entering the road network based on existing traffic condition and select the optimal routes for the drivers. The system also takes into account the effects of the vehicles that adopt the planned routes and consequently affecting the future traffic for the future adopters. This project is to develop an iPhone App to port this Android-based mobile system to iPhone (with iOS).
+  -->
+  </h2>
+  
+  <a href="#"><span class="caret-right"></span> Read More</a>
+  
   </div>
+</div>
+
+<div id="main" class="container">
+{{render "roles" roles}}
+
+{{render "rules" rules}}
+
+{{render "schedule" schedule}}
+
+{{render "contact" contact}}
 </div>

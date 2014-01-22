@@ -33,6 +33,9 @@
   <!-- build:js(tmp/result) /assets/vendor.min.js -->
 
     <script src="/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript">
+      ENV = {FEATURES: {'query-params-new': true}};
+    </script>
 
     <!-- @if dist=false -->
     <script src="/vendor/handlebars/handlebars.js"></script>
@@ -42,7 +45,7 @@
     <script src="/vendor/ember/ember.prod.js"></script>
     <!-- @endif -->
 
-    <script src="/vendor/ember-data/ember-data.js"></script>
+
     <script src="/vendor/loader.js"></script>
     <script src="/vendor/ember-resolver/dist/ember-resolver.js"></script>
     <script src="/vendor/ic-ajax/main.js"></script>
