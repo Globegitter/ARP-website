@@ -13,17 +13,18 @@
           </div>
           <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-              {{#link-to 'roles' tagName='li'}}
-	            {{#link-to 'roles' class='first'}}Team Roles{{/link-to}}
-               {{/link-to}}{{!(query-params anchor="#roles")}}
+              {{#link-to 'team' tagName='li'}}
+	            {{#link-to 'team' class='first'}}Team & Contact{{/link-to}}
+               {{/link-to}}
+               <!--{{!(query-params anchor="#roles")}}-->
               {{#link-to 'rules' tagName='li'}}
 	            {{#link-to 'rules'}}Team Rules{{/link-to}}
               {{/link-to}}
               {{#link-to 'schedule' tagName='li'}}
 	            {{#link-to 'schedule'}}Schedule{{/link-to}}
               {{/link-to}}
-              {{#link-to 'contact' tagName='li'}}
-	            {{#link-to 'contact'}}Contact{{/link-to}}
+              {{#link-to 'deliverables' tagName='li'}}
+	            {{#link-to 'deliverables'}}Deliverables{{/link-to}}
               {{/link-to}}
             </ul>
           </div>

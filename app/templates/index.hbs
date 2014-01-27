@@ -4,13 +4,36 @@
     Adaptive Route Planning
   </h1>
   <h2>
-Self-aware vehicle route planning app that uses real-time traffic data and own routing history to determine optimal routes for users.
+We’re building a route-planning app for iPhone that will take into account how many drivers it is routing and where when determining future traffic.
   <!--
   The UNC GAMMA Research	Group is developing an Android-based platform for adaptive vehicle route planning using real-time traffic information that will predict the future traffic for the vehicles entering the road network based on existing traffic condition and select the optimal routes for the drivers. The system also takes into account the effects of the vehicles that adopt the planned routes and consequently affecting the future traffic for the future adopters. This project is to develop an iPhone App to port this Android-based mobile system to iPhone (with iOS).
   -->
   </h2>
   
-  <a href="#"><span class="caret-right"></span> Read More</a>
+  
+  
+  <div class="" id="accordion">
+  <div class=" s">
+    <div class="">
+        <a {{action "toggle" target="view"}} data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          {{#if view.showConcept}}
+            <span class="caret"></span> Hide Project Concept
+          {{else}}
+            <span class="caret-right"></span> Show Project Concept
+          {{/if}}
+        </a>
+    </div>
+    <div id="collapseOne" class=" collapse out">
+      <p style="text-align:justify;">
+      <img src="/assets/images/concept.jpg" width="200px;" style="float: left; margin-right: 10px;">
+    The UNC GAMMA Research Group is developing an Android-based platform for adaptive vehicle route planning using real-time traffic information that will predict the future traffic for the vehicles entering the road network based on existing traffic condition and select the optimal routes for the drivers.	
+The system also takes into account the effects of the vehicles that adopt the planned routes and consequently affecting the future traffic for the future adopters. There is already an Android-based mobile system that was developed using Java and C++ (with most of the C++ on the backend). 
+The project is to port the Android app to the iOS platform for iPhone. It should have the same basic goal, which is to create a “self-aware” route planning application that takes into account the number of users following similar routes when predicting future traffic. Ideally, the iPhone app will have the same functionality and features of the Android app that are available to iOS.
+      </p>
+    </div>
+  </div>
+</div>
+
   
   </div>
 </div>
@@ -18,7 +41,11 @@ Self-aware vehicle route planning app that uses real-time traffic data and own r
 <div id="main" class="container">
 {{render "team" team}}
 
+{{!render "client" client}}
+
 {{render "rules" rules}}
 
 {{render "schedule" schedule}}
+
+{{render "deliverables" deliverables}}
 </div>

@@ -1,0 +1,40 @@
+@import "../../vendor/bootstrap/less/mixins.less";
+// Coloured navbar
+.navbar-colour {
+  //background-color: #e9f2c3;
+  //#gradient > .vertical(@start-color: #e9f2c3; @end-color: darken(#e9f2c3, 10%));
+  //.reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
+  //border-radius: @navbar-border-radius;
+  //@shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+  //.box-shadow(@shadow);
+  
+  .navbar-nav a:hover{
+    //#gradient > .radial(@inner-color: lighten(#FCE267, 20%); @outer-color: darken(#FCE267, 0%)); 
+    background-image: -webkit-radial-gradient(top, lighten(#f7d15d, 20%), darken(#f7d15d, 10%));
+    background-image: radial-gradient(at top, lighten(#f7d15d, 20%), darken(#f7d15d, 10%));
+    background-repeat: no-repeat;
+    //background-color: #fff;
+    //background-image: -webkit-radial-gradient(circle, red, green);
+    //background-image: radial-gradient(circle, red, green);
+    //background-repeat: no-repeat;
+  }
+
+  .navbar-nav > .active > a {
+    //#gradient > .vertical(@start-color: darken(#7BDDAA, 5%); @end-color: darken(#7BDDAA, 2%));
+    #gradient > .vertical(@start-color: darken(#F1EFA5, 5%); @end-color: darken(#F1EFA5, 2%));
+    //#gradient > .radial(@inner-color: darken(#7BDDAA, 5%); @outer-color: darken(#7BDDAA, 2%));
+    .box-shadow(inset 0 3px 9px rgba(0,0,0,.075));
+  }
+  
+  a{
+    color: #7a8952; 
+  }
+  
+  .navbar-nav a{
+    border-right: 1px solid darken(#FCE267, 30%);
+  }
+  
+  .first{
+    border-left: 1px solid darken(#FCE267, 30%);
+  }
+}

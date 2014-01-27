@@ -2,9 +2,11 @@ var Router = Ember.Router.extend(); // ensure we don't share routes between all 
 
 Router.map(function() {
   this.route('schedule');
-  this.route('roles');
+  //this.route('roles');
   this.route('rules');
-  this.route('contact');
+  //this.route('contact');
+  this.route('deliverables');
+  this.route('team');
   //this.resource('index', {
   //  path: '/',
   //  queryParams: ['anchor']
