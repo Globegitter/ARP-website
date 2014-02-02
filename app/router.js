@@ -7,6 +7,7 @@ Router.map(function() {
   //this.route('contact');
   this.route('deliverables');
   this.route('team');
+  this.route('test');
   //this.resource('index', {
   //  path: '/',
   //  queryParams: ['anchor']
