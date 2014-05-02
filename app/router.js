@@ -8,6 +8,7 @@ Router.map(function() {
   this.route('deliverables');
   this.route('team');
   this.route('milestones');
+  this.route('summary');
   //this.resource('index', {
   //  path: '/',
   //  queryParams: ['anchor']
